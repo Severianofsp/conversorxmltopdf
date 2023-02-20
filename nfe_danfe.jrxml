@@ -1,0 +1,1311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="DANFE_SEFAZ" pageWidth="842" pageHeight="595" orientation="Landscape" whenNoDataType="AllSectionsNoDetail" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isIgnorePagination="true" uuid="fc97a963-c0b6-4c19-a348-7e2773e092a3">
+	<property name="template.engine" value="tabular_template"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Nfe Test"/>
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+			<topPen lineWidth="1.0" lineColor="#000000"/>
+			<leftPen lineWidth="1.0" lineColor="#000000"/>
+			<bottomPen lineWidth="1.0" lineColor="#000000"/>
+			<rightPen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="label" fontName="Courier New" fontSize="10" isBold="true"/>
+	<style name="Table_TH" mode="Transparent" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+			<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+			<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+			<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+			<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Transparent" backcolor="#F2F2F2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+			<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+			<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+			<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+			<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Transparent" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+			<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+			<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+			<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+			<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="c0fdaa7e-6e1e-4fb7-8272-58dd0d1619c5"/>
+	<subDataset name="Dataset_table" uuid="2adcc514-e4c0-4731-805d-cfd1c3b75fd2">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Nfe Test"/>
+		<queryString language="xPath">
+			<![CDATA[/nfeProc/NFe/infNFe/det/prod]]>
+		</queryString>
+		<field name="cProd" class="java.lang.String">
+			<property name="net.sf.jasperreports.xpath.field.expression" value="cProd"/>
+			<fieldDescription><![CDATA[cProd]]></fieldDescription>
+		</field>
+		<field name="xProd" class="java.lang.String">
+			<property name="net.sf.jasperreports.xpath.field.expression" value="xProd"/>
+			<fieldDescription><![CDATA[xProd]]></fieldDescription>
+		</field>
+		<field name="NCM" class="java.lang.Integer">
+			<property name="net.sf.jasperreports.xpath.field.expression" value="NCM"/>
+			<fieldDescription><![CDATA[NCM]]></fieldDescription>
+		</field>
+		<field name="CFOP" class="java.lang.Integer">
+			<property name="net.sf.jasperreports.xpath.field.expression" value="CFOP"/>
+			<fieldDescription><![CDATA[CFOP]]></fieldDescription>
+		</field>
+		<field name="uTrib" class="java.lang.String">
+			<property name="net.sf.jasperreports.xpath.field.expression" value="uTrib"/>
+			<fieldDescription><![CDATA[uTrib]]></fieldDescription>
+		</field>
+		<field name="qCom" class="java.math.BigDecimal">
+			<property name="net.sf.jasperreports.xpath.field.expression" value="qCom"/>
+			<fieldDescription><![CDATA[qCom]]></fieldDescription>
+		</field>
+		<field name="vUnTrib" class="java.math.BigDecimal">
+			<property name="net.sf.jasperreports.xpath.field.expression" value="vUnTrib"/>
+			<fieldDescription><![CDATA[vUnTrib]]></fieldDescription>
+		</field>
+		<field name="vProd" class="java.math.BigDecimal">
+			<property name="net.sf.jasperreports.xpath.field.expression" value="vProd"/>
+			<fieldDescription><![CDATA[vProd]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="MARCA_DAGUA" class="java.lang.String"/>
+	<queryString language="XPath">
+		<![CDATA[/nfeProc]]>
+	</queryString>
+	<field name="emit" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="/nfeProc/NFe/infNFe/emit"/>
+		<fieldDescription><![CDATA[/nfeProc/NFe/infNFe/emit]]></fieldDescription>
+	</field>
+	<field name="emit_enderEmit" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/emit/enderEmit"/>
+		<fieldDescription><![CDATA[NFe/infNFe/emit/enderEmit]]></fieldDescription>
+	</field>
+	<field name="emit_xNome" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="/nfeProc/NFe/infNFe/emit/xNome"/>
+		<fieldDescription><![CDATA[/nfeProc/NFe/infNFe/emit/xNome]]></fieldDescription>
+	</field>
+	<field name="emit_xLgr" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="/nfeProc/NFe/infNFe/emit/enderEmit/xLgr"/>
+		<fieldDescription><![CDATA[/nfeProc/NFe/infNFe/emit/enderEmit/xLgr]]></fieldDescription>
+	</field>
+	<field name="emit_nro" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/emit/enderEmit/nro"/>
+		<fieldDescription><![CDATA[NFe/infNFe/emit/enderEmit/nro]]></fieldDescription>
+	</field>
+	<field name="emit_xBairro" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/emit/enderEmit/xBairro"/>
+		<fieldDescription><![CDATA[NFe/infNFe/emit/enderEmit/xBairro]]></fieldDescription>
+	</field>
+	<field name="emit_xMun" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/emit/enderEmit/xMun"/>
+		<fieldDescription><![CDATA[NFe/infNFe/emit/enderEmit/xMun]]></fieldDescription>
+	</field>
+	<field name="emit_UF" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/emit/enderEmit/UF"/>
+		<fieldDescription><![CDATA[NFe/infNFe/emit/enderEmit/UF]]></fieldDescription>
+	</field>
+	<field name="emit_CNPJ" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/emit/CNPJ"/>
+		<fieldDescription><![CDATA[NFe/infNFe/emit/CNPJ]]></fieldDescription>
+	</field>
+	<field name="emit_CEP" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/emit/enderEmit/CEP"/>
+		<fieldDescription><![CDATA[NFe/infNFe/emit/enderEmit/CEP]]></fieldDescription>
+	</field>
+	<field name="emit_fone" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/emit/enderEmit/fone"/>
+		<fieldDescription><![CDATA[NFe/infNFe/emit/enderEmit/fone]]></fieldDescription>
+	</field>
+	<field name="emit_IE" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/emit/IE"/>
+		<fieldDescription><![CDATA[NFe/infNFe/emit/IE]]></fieldDescription>
+	</field>
+	<field name="dest" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/dest"/>
+		<fieldDescription><![CDATA[NFe/infNFe/dest]]></fieldDescription>
+	</field>
+	<field name="dest_CNPJ" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/dest/CNPJ"/>
+		<fieldDescription><![CDATA[NFe/infNFe/dest/CNPJ]]></fieldDescription>
+	</field>
+	<field name="dest_xNome" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/dest/xNome"/>
+		<fieldDescription><![CDATA[NFe/infNFe/dest/xNome]]></fieldDescription>
+	</field>
+	<field name="dest_enderDest" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/dest/enderDest"/>
+		<fieldDescription><![CDATA[NFe/infNFe/dest/enderDest]]></fieldDescription>
+	</field>
+	<field name="dest_xLgr" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/dest/enderDest/xLgr"/>
+		<fieldDescription><![CDATA[NFe/infNFe/dest/enderDest/xLgr]]></fieldDescription>
+	</field>
+	<field name="dest_nro" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/dest/enderDest/nro"/>
+		<fieldDescription><![CDATA[NFe/infNFe/dest/enderDest/nro]]></fieldDescription>
+	</field>
+	<field name="dest_xBairro" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/dest/enderDest/xBairro"/>
+		<fieldDescription><![CDATA[NFe/infNFe/dest/enderDest/xBairro]]></fieldDescription>
+	</field>
+	<field name="dest_cMun" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/dest/enderDest/cMun"/>
+		<fieldDescription><![CDATA[NFe/infNFe/dest/enderDest/cMun]]></fieldDescription>
+	</field>
+	<field name="dest_xMun" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/dest/enderDest/xMun"/>
+		<fieldDescription><![CDATA[NFe/infNFe/dest/enderDest/xMun]]></fieldDescription>
+	</field>
+	<field name="dest_UF" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/dest/enderDest/UF"/>
+		<fieldDescription><![CDATA[NFe/infNFe/dest/enderDest/UF]]></fieldDescription>
+	</field>
+	<field name="dest_CEP" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/dest/enderDest/CEP"/>
+		<fieldDescription><![CDATA[NFe/infNFe/dest/enderDest/CEP]]></fieldDescription>
+	</field>
+	<field name="dest_IE" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/dest/IE"/>
+		<fieldDescription><![CDATA[NFe/infNFe/dest/IE]]></fieldDescription>
+	</field>
+	<field name="chNFe" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="protNFe/infProt/chNFe"/>
+		<fieldDescription><![CDATA[protNFe/infProt/chNFe]]></fieldDescription>
+	</field>
+	<field name="nf_serie" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/ide/serie"/>
+		<fieldDescription><![CDATA[NFe/infNFe/ide/serie]]></fieldDescription>
+	</field>
+	<field name="nf_nNF" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/ide/nNF"/>
+		<fieldDescription><![CDATA[NFe/infNFe/ide/nNF]]></fieldDescription>
+	</field>
+	<field name="nf_dhEmi" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/ide/dhEmi"/>
+		<fieldDescription><![CDATA[NFe/infNFe/ide/dhEmi]]></fieldDescription>
+	</field>
+	<field name="nf_tpNF" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/ide/tpNF"/>
+		<fieldDescription><![CDATA[NFe/infNFe/ide/tpNF]]></fieldDescription>
+	</field>
+	<field name="nf_vNF" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/total/ICMSTot/vNF"/>
+		<fieldDescription><![CDATA[NFe/infNFe/total/ICMSTot/vNF]]></fieldDescription>
+	</field>
+	<field name="nf_nProt" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="protNFe/infProt/nProt"/>
+		<fieldDescription><![CDATA[protNFe/infProt/nProt]]></fieldDescription>
+	</field>
+	<field name="transp_modFrete" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/transp/modFrete"/>
+		<fieldDescription><![CDATA[NFe/infNFe/transp/modFrete]]></fieldDescription>
+	</field>
+	<field name="transp_CNPJ" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/transp/transporta/CNPJ"/>
+		<fieldDescription><![CDATA[NFe/infNFe/transp/transporta/CNPJ]]></fieldDescription>
+	</field>
+	<field name="transp_xNome" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/transp/transporta/xNome"/>
+		<fieldDescription><![CDATA[NFe/infNFe/transp/transporta/xNome]]></fieldDescription>
+	</field>
+	<field name="transp_IE" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/transp/transporta/IE"/>
+		<fieldDescription><![CDATA[NFe/infNFe/transp/transporta/IE]]></fieldDescription>
+	</field>
+	<field name="transp_xEnder" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/transp/transporta/xEnder"/>
+		<fieldDescription><![CDATA[NFe/infNFe/transp/transporta/xEnder]]></fieldDescription>
+	</field>
+	<field name="transp_xMun" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/transp/transporta/xMun"/>
+		<fieldDescription><![CDATA[NFe/infNFe/transp/transporta/xMun]]></fieldDescription>
+	</field>
+	<field name="transp_UF" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/transp/transporta/UF"/>
+		<fieldDescription><![CDATA[NFe/infNFe/transp/transporta/UF]]></fieldDescription>
+	</field>
+	<field name="infCpl" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/infAdic/infCpl"/>
+		<fieldDescription><![CDATA[NFe/infNFe/infAdic/infCpl]]></fieldDescription>
+	</field>
+	<field name="transp_qVol" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/transp/vol/qVol"/>
+		<fieldDescription><![CDATA[NFe/infNFe/transp/vol/qVol]]></fieldDescription>
+	</field>
+	<field name="transp_esp" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/transp/vol/esp"/>
+		<fieldDescription><![CDATA[NFe/infNFe/transp/vol/esp]]></fieldDescription>
+	</field>
+	<field name="transp_nVol" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/transp/vol/nVol"/>
+		<fieldDescription><![CDATA[NFe/infNFe/transp/vol/nVol]]></fieldDescription>
+	</field>
+	<field name="transp_pesoL" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/transp/vol/pesoL"/>
+		<fieldDescription><![CDATA[NFe/infNFe/transp/vol/pesoL]]></fieldDescription>
+	</field>
+	<field name="transp_pesoB" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="NFe/infNFe/transp/vol/pesoB"/>
+		<fieldDescription><![CDATA[NFe/infNFe/transp/vol/pesoB]]></fieldDescription>
+	</field>
+	<background>
+		<band height="555">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement x="2" y="9" width="798" height="546" uuid="0e436eed-377f-413f-bf69-1449f8c2e3bb">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{MARCA_DAGUA}]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<pageHeader>
+		<band height="157" splitType="Stretch">
+			<rectangle>
+				<reportElement x="300" y="0" width="201" height="123" uuid="c8d89869-30da-487c-8ab3-6ed76f942805">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="0" y="123" width="240" height="34" uuid="148badc2-a2dc-4cde-9129-619b15de7ec1">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="240" y="123" width="240" height="34" uuid="fa7de789-89bb-4c67-8b24-dec10aff5d94">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="480" y="123" width="323" height="34" uuid="83c9cf1d-0eae-46e7-bfec-32cd63d8492a">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="2" y="126" width="140" height="13" uuid="5fbcc298-fdf8-4db8-b70f-9c4fcace629c"/>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[INSCRIÇÃO ESTADUAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="481" y="125" width="50" height="13" uuid="7dac4827-75d8-4a22-8e16-c7a6fd34efb8"/>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CNPJ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="241" y="126" width="239" height="13" uuid="ff68804d-3e1a-4fe8-87fc-1616b6665e7b"/>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[INSCRIÇÃO ESTADUAL DO SUBST. TRIBUT.]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Transparent" x="0" y="0" width="300" height="123" uuid="28e011ff-8fd2-4b90-9089-ec565ce3542c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="0" y="4" width="298" height="16" uuid="80f07f1a-bb28-4f48-bfa5-2c897272abc1">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IDENTIFICACÃO DO EMITENTE]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="501" y="0" width="302" height="41" uuid="1decd206-bcdb-4dd8-a5ce-8639073c0644">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="377" y="4" width="47" height="18" uuid="8d0d61f4-26d2-4e12-9c11-c5d969aa4e4d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DANFE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="316" y="22" width="170" height="30" uuid="3293a727-2f6a-497b-a2a2-be4ad13e3350"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Documento Auxiliar da Nota Fiscal Eletrônica]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="316" y="52" width="75" height="30" uuid="09b4a94f-4ac8-4005-ae9b-8d018d8ef306"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Courier New"/>
+				</textElement>
+				<text><![CDATA[0 - ENTRADA
+1 - SAÍDA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="502" y="4" width="301" height="18" uuid="86976278-3429-4d69-a88b-7b8283fd9bdd"/>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Courier New" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CHAVE DE ACESSO]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="501" y="41" width="302" height="41" uuid="5e1803f2-7a41-49aa-83c8-e8dc9e2da1de">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="501" y="82" width="302" height="41" uuid="6fb97384-ad34-4928-a6b7-50d1123763ef">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="501" y="42" width="301" height="36" uuid="f1307284-c0a3-444e-83c2-5856d7e2eec2"/>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Courier New" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Consulta de autenticidade no portal nacional da NF-e
+www.nfe.fazenda.gov.br/portal ou no site da Sefaz Autorizadora]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="501" y="83" width="301" height="18" uuid="f4489ff4-9b20-494c-8bc0-7d7661ee65ef"/>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[PROTOCOLO DE AUTORIZAÇÃO DE USO]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="391" y="52" width="20" height="30" uuid="2027ff48-6ecf-4095-82cd-e051ff9b2c2c">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nf_tpNF}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="107" width="303" height="16" uuid="5a1cd301-7f31-4ded-8db1-9505b3fec7e7">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nf_nProt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="0" y="41" width="300" height="16" isPrintWhenDetailOverflows="true" uuid="6779b0b1-a7a9-4db3-ab73-d08307c81540">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{emit_xNome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="0" y="57" width="300" height="66" isPrintWhenDetailOverflows="true" uuid="e6557b0c-1000-45aa-8870-e379b9789e92">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{emit_xLgr} + ", " + $F{emit_nro} + ", " + $F{emit_xBairro} + ", \n" +
+$F{emit_xMun} + ", " + $F{emit_UF} + ", " + $F{emit_CEP}   + ", \n" +
+ ($F{emit_fone} != null ? " Fone/Fax: " + $F{emit_fone} : "")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="480" y="140" width="323" height="16" isPrintWhenDetailOverflows="true" uuid="ba41704f-7759-44c7-a8b3-effb6acb708b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{emit_CNPJ}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="501" y="25" width="302" height="16" isPrintWhenDetailOverflows="true" uuid="8df46c60-0ece-456e-9891-8948052255a2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{chNFe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="301" y="84" width="200" height="16" uuid="d1bd4a2c-7a08-4417-82c0-20f3e821e1fd">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Nº: " + $F{nf_nNF}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="99" width="200" height="16" uuid="53b7c2fd-985c-4188-8c77-d84b28072ff0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Série: " + $F{nf_serie}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="140" width="240" height="16" isPrintWhenDetailOverflows="true" uuid="5fb574b8-695a-4ab2-a6c4-16e1c4b9ba67">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{emit_IE}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="398" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout"/>
+			<rectangle>
+				<reportElement mode="Transparent" x="500" y="85" width="142" height="30" uuid="e8cd2f28-87fa-4daa-b3ce-90bf03425573">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="483" y="25" width="159" height="30" uuid="d630a310-3ae0-4fd4-ad69-d446be43b6cb"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="592" y="142" width="50" height="30" uuid="651f034b-c317-406a-a80e-6d5dc50e149e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="309" y="142" width="100" height="30" uuid="d4392ec2-5752-4fcc-a5aa-417aecdb11e7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="0" y="172" width="409" height="30" uuid="fe214ab3-ef11-4a81-8309-1334d995051b">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="0" y="142" width="309" height="30" uuid="e3ad1e24-ca64-4076-8efd-9835ce3c6fc8">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="430" y="85" width="70" height="30" uuid="46f7f470-844b-4ea6-a7c6-deb5afa12ce4"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="642" y="85" width="160" height="30" uuid="e9c8c3b1-cd68-44e3-a59f-fad83b311762">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="642" y="55" width="160" height="30" uuid="496c5de3-b750-4719-bc83-e2411602b0ab">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="430" y="55" width="212" height="30" uuid="6e9abe40-c281-428d-9953-e9b70b5de963"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="0" y="55" width="430" height="30" uuid="bc39719e-c5ed-4830-8701-4da974fbe7ee">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="409" y="172" width="183" height="30" uuid="bf271edc-cb18-425f-ac62-5833d39cd1d3">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="642" y="57" width="45" height="13" uuid="a3731747-9510-4ddc-807c-9432a6e5c182"/>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CEP]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="642" y="25" width="160" height="30" uuid="bb6ad603-faca-4600-b1f2-b2e458ee850a">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="0" y="85" width="430" height="30" uuid="6a29a96e-05a8-403f-95c9-fe9c6b33f32c"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="642" y="87" width="142" height="13" uuid="55580346-9098-4b2f-ae88-0ae38578bdaf"/>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[V. TOTAL DA NOTA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="174" width="130" height="13" uuid="9b403978-6562-4fc3-bf11-ba668a0976e9"/>
+				<box topPadding="0" leftPadding="5" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ENDEREÇO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="500" y="88" width="142" height="13" uuid="85c57aff-d72c-4326-b0f4-85b27b96ad08"/>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[INSCRIÇÃO ESTADUAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="591" y="144" width="50" height="13" uuid="bbb49fac-4d58-4cc1-ae45-03ca66fda73d"/>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UF]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="57" width="130" height="13" uuid="772b194b-c6d9-4c73-a7fe-4d53490ad6f0"/>
+				<box topPadding="0" leftPadding="5" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ENDEREÇO]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Transparent" x="500" y="142" width="92" height="30" uuid="ddeaa9fa-1c8d-4b4f-9ae3-d6d3d4836c28">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="309" y="144" width="100" height="13" uuid="3a20a51d-2df8-4c67-8330-9e16a68a96af"/>
+				<box topPadding="0" leftPadding="5" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FRETE POR CONTA]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="642" y="172" width="159" height="30" uuid="b9a60b7f-7a71-49ab-9abf-431d5727baf9">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="592" y="172" width="50" height="30" uuid="6e28906a-0831-4408-8ae2-5cd806f89afe"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="409" y="142" width="91" height="30" uuid="04c49b01-b51b-47fd-82a3-9b613b8dd609">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="1" y="144" width="130" height="13" uuid="1dc4136b-0938-4a3f-8bf5-d2ff4d3ab293"/>
+				<box topPadding="0" leftPadding="5" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOME/RAZÃO SOCIAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="144" width="88" height="13" uuid="d008e77a-a447-48fd-a40b-4237f82af9a0"/>
+				<box topPadding="0" leftPadding="5" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CÓDIGO ANTT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="129" width="300" height="13" uuid="2e37e29f-08c7-4311-8eab-97464e578dd2"/>
+				<box leftPadding="0"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TRANSPORTADOR/VOLUMES TRANSPORTADOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="409" y="174" width="130" height="13" uuid="66955c23-5684-4d36-ae5a-bcd150a3f122"/>
+				<box topPadding="0" leftPadding="5" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MUNICÍPIO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="57" width="50" height="13" uuid="66bf6457-1a45-4f20-a4b6-ee2490d4078e"/>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BAIRRO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="642" y="27" width="85" height="13" uuid="f398d104-0f1f-4d84-a23d-e647dc995c8f"/>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATA EMISSÃO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="88" width="130" height="13" uuid="d1890452-80d6-45fe-b590-bf328a490fe5"/>
+				<box topPadding="0" leftPadding="5" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MUNICÍPIO]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="642" y="142" width="159" height="30" uuid="c845d029-9686-4c7d-b8ae-71ca29840658">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="643" y="174" width="140" height="13" uuid="2d3fbaa3-d0b7-420e-9bb1-485dae06509c"/>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[INSCRIÇÃO ESTADUAL]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Transparent" x="0" y="25" width="483" height="30" uuid="7b689461-0c9b-413a-8625-2fc6099b81f8">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="483" y="27" width="50" height="13" uuid="a53bc16e-87fd-4d8e-a322-5d2c58118e80"/>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CNPJ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="592" y="174" width="50" height="13" uuid="a17b6e3f-304d-4b2b-84cd-880b2230f37a"/>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UF]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="500" y="144" width="93" height="13" uuid="f8f415f1-3dd3-49a3-91d6-8a1ad47ae553"/>
+				<box topPadding="0" leftPadding="5" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLACA VEÍCULO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="label" x="0" y="27" width="130" height="13" uuid="cf485b6e-edfa-46d7-b127-70c773c1a950"/>
+				<box topPadding="0" leftPadding="5" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOME/RAZÃO SOCIAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="88" width="50" height="13" uuid="e3be079e-d2d5-4641-9616-8c207b75dc3d"/>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UF]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="643" y="144" width="50" height="13" uuid="f736aec9-e1e1-4d03-85d8-7f731492c15d"/>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CNPJ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="12" width="300" height="13" uuid="46487119-9114-4d5e-9940-3bddf75cb521"/>
+				<box leftPadding="0"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DESTINATÁRIO/REMETENTE]]></text>
+			</staticText>
+			<textField>
+				<reportElement stretchType="ContainerBottom" x="0" y="39" width="483" height="16" isPrintWhenDetailOverflows="true" uuid="68054b33-98b7-463f-81a9-5e49daaa5939">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dest_xNome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="69" width="430" height="16" isPrintWhenDetailOverflows="true" uuid="7ecf4ac2-271a-4bfa-ad54-8dac648e25aa">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dest_xLgr} + ", " + $F{dest_nro}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="69" width="213" height="16" isPrintWhenDetailOverflows="true" uuid="eec55202-f735-48bb-9db9-727eac754dc5">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dest_xBairro}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="99" width="430" height="16" isPrintWhenDetailOverflows="true" uuid="ce12b595-f4e9-4938-b2c4-3eb580be0856">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dest_xMun}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="99" width="70" height="16" isPrintWhenDetailOverflows="true" uuid="42befd3d-c760-4ec6-bc90-ee8a95c6c3c2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dest_UF}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="483" y="39" width="158" height="16" isPrintWhenDetailOverflows="true" uuid="14a97833-2cca-4372-be1d-be0112aa7a36">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dest_CNPJ}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="643" y="39" width="158" height="16" isPrintWhenDetailOverflows="true" uuid="1d42e63f-0ebc-427b-bb65-04d2baf2e99f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{nf_dhEmi} !=null) ? new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssXXX").parse($F{nf_dhEmi}) : null]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="642" y="69" width="160" height="16" isPrintWhenDetailOverflows="true" uuid="a57076a1-37dd-4bb2-8c09-cfb95a4258b5">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dest_CEP}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="501" y="99" width="140" height="16" isPrintWhenDetailOverflows="true" uuid="7045b907-27b2-4f3d-b2bc-bd64b3cae8a5">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dest_IE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="156" width="309" height="16" isPrintWhenDetailOverflows="true" uuid="f549afb0-2126-4a53-a44c-53c334105cfa">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{transp_xNome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="309" y="156" width="100" height="16" isPrintWhenDetailOverflows="true" uuid="1c56f888-5043-4f75-a78d-13a0200f3937">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{transp_modFrete}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="592" y="156" width="49" height="16" isPrintWhenDetailOverflows="true" uuid="d6a5f63e-fb76-49b3-a693-e693d79400aa">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{transp_UF}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="642" y="156" width="159" height="16" isPrintWhenDetailOverflows="true" uuid="1de500c4-d8f5-45fb-a77d-fd57399c0f8d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{transp_CNPJ}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="593" y="186" width="49" height="16" isPrintWhenDetailOverflows="true" uuid="9d761238-9e30-4770-ba8a-621e5871c3df">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{transp_UF}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="186" width="409" height="16" isPrintWhenDetailOverflows="true" uuid="5b533feb-f94d-4ea4-8d7e-411dbb279e6c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{transp_xEnder}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="409" y="186" width="183" height="16" isPrintWhenDetailOverflows="true" uuid="863fd7fd-7820-4d78-a9e2-0b522965b77c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{transp_xMun}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="245" width="300" height="13" uuid="32d68726-6eb3-4b10-923b-fe236ba7683a"/>
+				<box padding="0"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DADOS DOS PRODUTOS/SERVIÇOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="325" width="300" height="13" uuid="ea696b33-1698-40c2-a34a-63739ee249ab"/>
+				<box padding="0"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DADOS ADICIONAIS]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" mode="Transparent" x="0" y="338" width="802" height="60" isPrintWhenDetailOverflows="true" uuid="ef341900-31cb-4502-bbbb-b29b147c5e9f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="5">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{infCpl} != null) ? $F{infCpl} : ""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="642" y="186" width="159" height="16" isPrintWhenDetailOverflows="true" uuid="eb5d31ec-d869-4662-bf42-f0c3d8a9f58e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{transp_IE} != null) ? $F{transp_IE}: ""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="642" y="99" width="159" height="16" isPrintWhenDetailOverflows="true" uuid="bc6ba60d-c906-4823-88c1-b01de15dd40c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{nf_vNF} != null) ? new java.text.DecimalFormat("#,##0.00").format(Double.valueOf($F{nf_vNF})) : " - "]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement mode="Transparent" x="0" y="202" width="200" height="30" uuid="de73e086-bdc3-4660-a2a6-caa1545ffe3e">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="200" y="202" width="209" height="30" uuid="b2169d8a-974a-4caa-aaf3-35841686df3e">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="592" y="202" width="209" height="30" uuid="bf462e75-b5c0-4627-b3fa-948b6fa92b47">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="409" y="202" width="183" height="30" uuid="9be3b415-ff16-485a-9a57-6ad45109671d">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="204" width="130" height="13" uuid="5828a3ae-4cf3-4773-a184-8050dc203277"/>
+				<box topPadding="0" leftPadding="5" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[QUANTIDADE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="204" width="130" height="13" uuid="4bfef0f2-8071-44ce-b80e-e96f1edc818b"/>
+				<box topPadding="0" leftPadding="5" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ESPÉCIE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="409" y="204" width="183" height="13" uuid="f2068e40-075f-4e7f-83c3-9da2e37bb35d"/>
+				<box topPadding="0" leftPadding="5" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PESO BRUTO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="593" y="204" width="208" height="13" uuid="e042a29a-9b92-4106-ade0-c69468504a3c"/>
+				<box topPadding="0" leftPadding="5" bottomPadding="0" rightPadding="0"/>
+				<textElement textAlignment="Left">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PESO LÍQUIDO]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="216" width="200" height="16" isPrintWhenDetailOverflows="true" uuid="3e7812d2-bc94-4987-8baf-dbc36239d0b7">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{transp_qVol} != null) ? new java.text.DecimalFormat("#,##0.00").format(Double.valueOf($F{transp_qVol})) : " - "]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="216" width="209" height="16" isPrintWhenDetailOverflows="true" uuid="41b9f1ca-0854-4266-8e3b-567d3614a2a0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{transp_esp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="216" width="182" height="16" isPrintWhenDetailOverflows="true" uuid="329bb0f2-47a1-4a73-8623-a0bbfec940f5">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{transp_pesoB} != null) ? new java.text.DecimalFormat("#,##0.00").format(Double.valueOf($F{transp_pesoB})) : " - "]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="593" y="216" width="208" height="16" isPrintWhenDetailOverflows="true" uuid="20c86e24-bb74-4cb9-8f63-6dd9f798831e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{transp_pesoL} != null) ? new java.text.DecimalFormat("#,##0.00").format(Double.valueOf($F{transp_pesoL})) : " - "]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="0" y="258" width="802" height="61" uuid="fe97ead8-851d-445c-9f3d-1e1a913886f1">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 1_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 1_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table 1_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataset_table" uuid="4d3cd492-bbed-407a-8339-e6118db7cc32">
+						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("/nfeProc/NFe/infNFe/det/prod")]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="110" uuid="1b678a69-736c-4761-91f3-85ce79896a22">
+						<jr:columnHeader style="Table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="110" height="30" uuid="329d5dd7-a140-4743-9bc1-6e8f87b32483"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Courier New"/>
+								</textElement>
+								<text><![CDATA[CÓDIGO PRODUTO]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 1_TD" height="30" rowSpan="1">
+							<textField>
+								<reportElement stretchType="ContainerBottom" x="0" y="0" width="110" height="30" uuid="2726c5fe-8bb0-43a5-8d00-643a6e107ae2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Courier New"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{cProd}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="230" uuid="96d9de9d-2719-40d8-ba04-c17e57034a6c">
+						<jr:columnHeader style="Table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="230" height="30" uuid="4114fffb-53a3-499b-affb-e4fe9b44e86b"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Courier New"/>
+								</textElement>
+								<text><![CDATA[DESCRIÇÃO DO PRODUTO / SERVIÇO]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 1_TD" height="30" rowSpan="1">
+							<textField>
+								<reportElement stretchType="ContainerBottom" x="0" y="0" width="230" height="30" uuid="45ed0187-3c09-4545-880e-942c071df40d"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Courier New"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{xProd}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="70" uuid="a1833fe0-7107-4bbd-9ded-58490b14bfdf">
+						<jr:columnHeader style="Table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="70" height="30" uuid="8b752b43-1412-45c8-a7cf-295a7042ad95"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Courier New"/>
+								</textElement>
+								<text><![CDATA[NCM]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 1_TD" height="30" rowSpan="1">
+							<textField>
+								<reportElement stretchType="ContainerBottom" x="0" y="0" width="70" height="30" uuid="f8a9e502-5147-463d-b3eb-f98df8e869f5"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Courier New"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{NCM}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="70" uuid="c709b9f1-0ba8-4053-ab17-09d56df8342d">
+						<jr:columnHeader style="Table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="70" height="30" uuid="6681532a-d8fd-4e1b-8aec-a05abf4c53ff"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Courier New"/>
+								</textElement>
+								<text><![CDATA[CFOP]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 1_TD" height="30" rowSpan="1">
+							<textField>
+								<reportElement stretchType="ContainerBottom" x="0" y="0" width="70" height="30" uuid="459e681a-0d8f-4e00-ad70-84a3d42450d9"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Courier New"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{CFOP}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="6a2c57ef-a4ef-445f-8f73-8e1643b5561a">
+						<jr:columnHeader style="Table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="a3cece50-90fa-4e81-9001-896da2dd7752"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Courier New"/>
+								</textElement>
+								<text><![CDATA[UN]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 1_TD" height="30" rowSpan="1">
+							<textField>
+								<reportElement stretchType="ContainerBottom" x="0" y="0" width="90" height="30" uuid="96ec4e39-bbb0-4db9-b24c-800e0104e53b"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Courier New"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{uTrib}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="65" uuid="6bd60339-bcd7-4622-80d3-a849264ceab6">
+						<jr:columnHeader style="Table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="65" height="30" uuid="205fa4a7-7643-4921-a134-5123ffa90e47"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Courier New"/>
+								</textElement>
+								<text><![CDATA[QUANT]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 1_TD" height="30" rowSpan="1">
+							<textField>
+								<reportElement stretchType="ContainerBottom" x="0" y="0" width="65" height="30" uuid="b241f1bb-6c3a-455b-b2d0-d111a48a6b7b"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Courier New"/>
+								</textElement>
+								<textFieldExpression><![CDATA[($F{qCom} != null) ? new DecimalFormat("#,##0.00").format($F{qCom}) : " - "]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="95" uuid="d19be062-5b57-4bbe-9223-4fe28875642b">
+						<jr:columnHeader style="Table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="95" height="30" uuid="a89f82b5-9136-42c2-929a-5ae5b3c9e053"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Courier New"/>
+								</textElement>
+								<text><![CDATA[VALOR UNIT]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 1_TD" height="30" rowSpan="1">
+							<textField>
+								<reportElement stretchType="ContainerBottom" x="0" y="0" width="95" height="30" uuid="bdae8c48-faca-428b-9033-e9160becbe27"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Courier New"/>
+								</textElement>
+								<textFieldExpression><![CDATA[($F{vUnTrib} != null) ? new DecimalFormat("#,##0.00").format($F{vUnTrib}) : " - "]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="71" uuid="22ce279d-7dc9-471d-8f46-62fc3d7a0bd3">
+						<jr:columnHeader style="Table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="71" height="30" uuid="4c1fcbe8-6905-4688-a8df-29198c24593c"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Courier New"/>
+								</textElement>
+								<text><![CDATA[VALOR TOTAL]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 1_TD" height="30" rowSpan="1">
+							<textField>
+								<reportElement stretchType="ContainerBottom" x="0" y="0" width="71" height="30" uuid="858ac95b-1320-4cb1-ac85-d066846ef2e3"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Courier New"/>
+								</textElement>
+								<textFieldExpression><![CDATA[($F{vProd} != null) ? new java.text.DecimalFormat("#,##0.00").format($F{vProd}) : " - "]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+</jasperReport>
